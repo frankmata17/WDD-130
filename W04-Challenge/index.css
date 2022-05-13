@@ -1,0 +1,53 @@
+body {
+    background-color: pink;
+    text-align: center;
+}
+p {
+    color: white;
+
+}
+.span {
+    color: black;
+}
+.img {
+    
+}
+h1 {
+    color: white;
+    cursor: pointer;
+}
+.edu {
+    justify-content: middle;
+    position: absolute;
+}
+
+h1:hover {
+    color: black;
+}
+.main-para {
+    font-size: 1em;
+}
+li span {
+   display: inline-block;
+}
+.quote {
+    font-size: 1.5em;
+}
+
+.Pres {
+    color: black;
+    text-align: center;
+    display: inline-block;
+}
+.first {
+    color: black;
+}
+.second {
+    color: black;
+}
+.third {
+    color:black;
+}
+.fourth {
+    color: black;
+}
