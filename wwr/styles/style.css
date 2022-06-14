@@ -159,32 +159,32 @@ nav {
 }
 .home-grid {
     display: grid;
-    grid-template-columns: 1/10;
+    /* grid-template-columns: 1 / 10; */
 }
 .card-img, .mountains {
     width: 100%;
 }
-.rivers-card {
-   grid-template-columns: 2/4 2/3
-}
-.camping-card {
-    grid-template-columns: 5/7 2/3
+/* .rivers-card {
+   grid-template-columns: 2 / 4 2 / 3;
+} */
+/* .camping-card {
+    grid-template-columns: 5 / 7 2 / 3;
 }
 .rapids-card {
-    grid-template-columns: 8/10 2/3
-}
-#background {
-    grid-template-columns: 1/11 4/9
-}
-.mountains {
-    grid-template-columns: 2/7 5/8
-}
-.msg {
-    grid-template-columns:6/10 6/10
-}
+    grid-template-columns: 8 / 10 2 / 3; */
+/* } */
+/* #background {
+    grid-template-columns: 1 / 11 4 / 9;
+} */
+/* .mountains {
+    grid-template-columns: 2 / 7 5 / 8;
+} */
+/* .msg {
+    grid-template-columns:6 / 10 6 / 10;
+} */
 .home-grid {
     display: flex;
-    grid-template-columns: 1/4;
+    /* grid-template-columns: 1/4; */
     grid-row: 1/4;
     align-items: center;
     box-shadow: 10px 5px 5px black;
