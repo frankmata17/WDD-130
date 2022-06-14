@@ -7,6 +7,7 @@
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
+    box-shadow: 10px 5px 5px black;
 
 }
 nav a {
@@ -146,6 +147,7 @@ nav {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    box-shadow: 10px 5px 5px black;
 }
 .hero-img {
     display: block;
@@ -185,9 +187,19 @@ nav {
     grid-template-columns: 1/4;
     grid-row: 1/4;
     align-items: center;
-    float: center;
+    box-shadow: 10px 5px 5px black;
+    transition: all 0.5s;
+    z-index: 100;
+    position: relative;
+    border-radius: 10px;
+    transform: translate(-50px, -50px);
+    left: 30px;
+    transition-delay: 0.5s;
 }
 .row {
     content:"";
     display: table;
+}
+.row:hover .home-grid{
+    transform: translate(-50px, -50px);
 }
