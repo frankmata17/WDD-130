@@ -203,3 +203,43 @@ nav {
 .row:hover .home-grid{
     transform: translate(-50px, -50px);
 }
+
+
+/*rates/dates CSS */
+.headline {
+    text-align: center;
+    padding: 20px;
+    font-size:x-large;
+}
+.main-msg {
+    padding: 20px;
+    text-align: center;
+}
+.P1 {
+    padding: 10px;
+    text-align: left;
+    padding-top: 90px;
+}
+.P2 {
+    padding: 10px;
+    text-align: left;
+    padding-top: 80px;
+}
+.P3 {
+    padding: 10px;
+    text-align: left;
+    padding-top: 80px;
+}
+.river-narrow {
+    padding: 20px;
+    width: 400px;
+    float: left;
+    shape-outside: square;
+}
+.rafting  {
+    padding-right: 20px;
+    padding-top: 90px;
+    width: 350px;
+    float: right;
+    shape-outside: circle (50%);
+}
