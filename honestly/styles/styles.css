@@ -1,5 +1,13 @@
+@page {
+    size: 4in 6in landscape;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+}
 body {
     background-color: whitesmoke;
+    display:grid;
 }
 .logo  {
     width: 200px;
@@ -22,10 +30,13 @@ body {
 }
 header  {
     background-color: gray;
+    height: 80%;
 }
-footer {
-    background-color: gray;
-    display: grid;
+#review-img {
+    height: 100px;
+    width: 200px;
+    align-items: center;
+    left: 100px;
 }
 .social {
     align-items: right;
@@ -37,17 +48,30 @@ footer {
     width: 100px;
     height: 100px;
     text-align: center;
+    align-items: center;
 }
 main {
     box-sizing: border-box;
 }
-main-img {
+#review-img {
     display:flex;
     flex-direction: row;
     float: center;
     align-items: center;
     left: 100px;
     position: fixed;
+    text-align: center;
+}
+.content {
+    flex: 1 0 auto;
+}
+footer {
+    background-color: gray;
+    display: grid;
+    height: 100%;
+    margin-top: -50px;
+    flex-shrink: 0;
+   
 }
 
 /* Contact Us CSS */
