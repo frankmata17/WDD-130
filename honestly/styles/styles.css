@@ -9,9 +9,15 @@ html, body {
 body {
     display:grid;
 }
+main {
+  scroll-behavior: smooth;
+  height: 400px;;
+  min-height: 150px;
+  position: relative;
+}
 .logo  {
     width: 200px;
-    height: 200px;
+    height:max-content;
 }
 .topnav {
     text-align: center;
@@ -47,24 +53,24 @@ header  {
   align-items: center;
   position:fixed;
 } */
-.main-img {
-  align-items: center;
-  position:fixed;
-}
 .social {
     align-items: right;
     text-align: right;
 }
 #row {
-    display: flex;
-    flex-direction: row;
+    display:flex;
     width: 100px;
     height: 100px;
-    text-align: center;
-    align-items: center;
+    /* text-align: center;
+    align-items: center; */
     padding: 5px;
-    position:absolute
-    left: 50vh;
+    position:relative;
+    /* left: 50vh; */
+    z-index: 0;
+    margin: 10px;
+    top: 0;
+    left: 0;
+
 }
 
 #review-img {
@@ -73,11 +79,12 @@ header  {
     left: 50vh;
     position: absolute;
     text-align: center;
-    z-index: index 0;;
+    z-index: 0;
+    padding: 10px;
+    height: 400px;
 }
 footer {
     text-decoration: none;
-    background-color: gray;
     display: grid;
     height: 100%;
     flex-shrink: 0;
