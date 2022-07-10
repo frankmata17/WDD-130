@@ -4,20 +4,21 @@
 html, body {
     background-color: #d4a373;
     height: 100%;
-    margin: 0;
+    margin: 100px auto;
 }
 body {
     display:grid;
-}
-main {
-  scroll-behavior: smooth;
-  height: 400px;;
-  min-height: 150px;
-  position: relative;
+    grid-template-columns: 100%;
+    margin: 100px auto;
+    min-height: 100vh;
+    height: max-content;
 }
 .logo  {
     width: 200px;
     height:max-content;
+}
+.content{
+  min-height: 100vh;
 }
 .topnav {
     text-align: center;
@@ -40,9 +41,12 @@ main {
 }
 header  {
     background-color: #faedcd;
-    height: 80%;
+    height: max-content;
     text-decoration: none;
     width: 100%;
+    top: 0;
+    position: sticky;
+    display:block;
 }
 
 /* #review-img {
@@ -57,14 +61,54 @@ header  {
     align-items: right;
     text-align: right;
 }
+
+/* Rating Start*/
+.rating {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  }
+  
+  .rating > input{
+   display:none;
+  }
+  
+  .rating > label {
+  position: relative;
+  width: 1.1em;
+  font-size: 1.5vw;
+  color: #FFD700;
+  cursor: pointer;
+  }
+  
+  .rating > label::before{
+  content: "\2605";
+  position: absolute;
+  opacity: 0;
+  }
+  
+  .rating > label:hover:before,
+  .rating > label:hover ~ label:before {
+  opacity: 1 !important;
+  }
+  
+  .rating > input:checked ~ label:before{
+  opacity:1;
+  }
+  
+  .rating:hover > input:checked ~ label:before{ 
+  opacity: 0.4;
+   }
+
+/* Rating End */
+
+
 #row {
     display:flex;
     width: 100px;
     height: 100px;
-    /* text-align: center;
-    align-items: center; */
     padding: 5px;
-    position:relative;
+    /* position:relative; */
     /* left: 50vh; */
     z-index: 0;
     margin: 10px;
@@ -82,17 +126,43 @@ header  {
     z-index: 0;
     padding: 10px;
     height: 400px;
+    justify-content: center;
 }
 footer {
     text-decoration: none;
     display: grid;
-    height: 100%;
+    height: max-content;
     flex-shrink: 0;
     padding: 10px;
     background-color: #faedcd;
     grid-gap: 0px;
     width: 100%;
+    bottom: 0;
 }
+.img1 {
+  padding:10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  justify-items: left;
+  top: 20px;
+}
+.img2 {
+  padding:10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  justify-items: right;
+}
+
+.img3 {
+  padding:10px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
 
 /* Contact Us CSS */
 form {
@@ -160,3 +230,20 @@ form {
        between the labels and their text fields */
     margin-left: .5em;
   }
+
+/* Review CSS */
+#posters {
+  display:inline-block;
+  place-items: center;
+  /* position:static; */
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50px;
+  height: 50px;
+  /* float: center; */
+  margin: 0 auto;
+  align-items: center;
+}
+
+  /* Review CSS END */
